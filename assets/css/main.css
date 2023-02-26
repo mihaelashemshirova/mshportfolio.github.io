@@ -300,6 +300,82 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	li{
+	list-style-type: none;
+	font-family: sans-serif;
+	}
+	.skills{
+	    width: 500px;
+	    margin: 60px auto;
+	}
+	.skills li{
+	margin: 10px 0;
+	}
+	.bar{
+	    display: block;
+	    height: 2px;
+	    border: 1px solid rgba(0, 0, 0, 0.3);
+	    border-radius: 3px;
+	    overflow: hidden;
+	    box-shadow: 0 0 10px #FF1493;
+	    background-color: pink;
+	}
+	.python{
+	    width: 80%;
+	    animation: python 2s;
+	}
+	.javascript{
+	    width: 20%;
+	    animation: javascript 2s;
+	}
+	.html{
+	    width: 40%;
+	    animation: html 2s;
+	}
+	.english{
+	    width: 60%;
+	    animation: english 2s;
+	}
+@keyframes html{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 40%;
+	}
+}
+
+@keyframes python{ /*animate css skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+
+@keyframes javascript{ /*animate javascript skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 20%;
+	}
+}
+
+@keyframes english{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 60%;
+	}
+}
+
 /* Form */
 
 	form {
@@ -1140,9 +1216,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
