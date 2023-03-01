@@ -3,6 +3,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+const darkModeButton = document.getElementById('dark-mode-button');
+const body = document.body;
+
+darkModeButton.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+});
+
 
 (function($) {
 
